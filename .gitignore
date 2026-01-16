@@ -1,0 +1,7 @@
+# Prettier config files
+.prettierrc
+.prettierrc.*
+prettier.config.*
+
+# Figma files
+*.fig
