@@ -42,17 +42,17 @@ h1 {
 }
 
 h2 {
-  font-family: "Young Serif";
+  font-family: "Young Serif", serif;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
   color: var(--color-brown-800);
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 p {
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 
 ul,
@@ -90,7 +90,7 @@ table td {
 }
 
 table td:first-child {
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
 }
 
 table td:last-child {
@@ -99,7 +99,7 @@ table td:last-child {
 }
 
 footer {
-  margin-bottom: 6rem;
+  margin-block-end: 6rem;
   font-size: 0.7rem;
   color: var(--color-stone-600);
   text-align: center;
@@ -118,7 +118,7 @@ footer a:hover {
   background-color: white;
   padding: 2.5rem;
   margin-top: 8rem;
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
   border-radius: 1.5rem;
 }
 
@@ -126,7 +126,7 @@ footer a:hover {
   width: 100%;
   height: auto;
   border-radius: 0.75rem;
-  margin-bottom: 2.5rem;
+  margin-block-end: 2.5rem;
 }
 
 .description {
@@ -146,12 +146,12 @@ footer a:hover {
   line-height: 1.5;
   letter-spacing: 0;
   color: var(--color-stone-600);
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 
 .prep-time-text {
   color: var(--color-rose-800);
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1;
@@ -163,15 +163,15 @@ footer a:hover {
   line-height: 1.5;
   letter-spacing: 0;
   color: var(--color-stone-600);
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 
 .table-description {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   main {
     align-items: flex-start;
   }
@@ -184,7 +184,7 @@ footer a:hover {
     /* padding: 2rem; */
     padding: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-block-end: 0;
     border-radius: 0;
   }
 
