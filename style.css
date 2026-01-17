@@ -1,0 +1,172 @@
+/* @font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-VariableFont.ttf) format("truetype");
+  font-weight: 100 900;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* stone */
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  /* rose */
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+  /* brown */
+  --color-brown-800: hsl(14, 45%, 36%);
+}
+
+body {
+  background-color: var(--color-stone-100);
+  /* font-family: ; */
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: "Young Serif";
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-brown-800);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: 2rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+li {
+  padding-left: 1rem; /* gap between bullet/number and text */
+}
+
+li span {
+  margin-left: 0; /* remove the margin we added earlier */
+}
+hr {
+  border: none;
+  border-top: 0.0625rem solid var(--color-stone-150);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr {
+  border-bottom: 0.0625rem solid var(--color-stone-150);
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table td {
+  padding: 0.75rem 0;
+}
+
+table td:first-child {
+  padding-left: 2rem;
+}
+
+table td:last-child {
+  color: var(--color-brown-800);
+  font-weight: 700;
+}
+
+footer {
+  margin-bottom: 6rem;
+  font-size: 0.7rem;
+  color: var(--color-stone-600);
+  text-align: center;
+}
+footer a {
+  color: var(--color-stone-600);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-rose-800);
+}
+
+.card {
+  width: clamp(20rem, 90%, 46rem);
+  background-color: white;
+  padding: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  font-family: "Outfit";
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--color-stone-600);
+}
+
+.prep-time {
+  background-color: var(--color-rose-50);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  font-family: "Outfit";
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--color-stone-600);
+  margin-bottom: 2rem;
+}
+
+.prep-time-text {
+  color: var(--color-rose-800);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.inside-text {
+  font-family: "Outfit";
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--color-stone-600);
+  margin-bottom: 2rem;
+}
+
+.table-description {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
